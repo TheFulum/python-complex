@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+		/>
+		<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/slide-show.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="72x72"
+			href="img/python-svgrepo-com.svg"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<title>Учебно-методическое пособие</title>
+		<style type="text/css">
+			body {
+				font: 14px/2 'Roboto', sans-serif;
+				letter-spacing: 0.05em;
+			}
+			.h1,
+			.h2,
+			.h3,
+			.h4,
+			.h5,
+			.h6,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 600;
+			}
+			p {
+				color: #8c97aa;
+				line-height: 28px;
+			}
+			.lead {
+				line-height: 34px;
+			}
+			.navbar-brand img {
+				height: 100px;
+				width: auto;
+			}
+			a {
+				color: #28b2f9;
+				transition: all 0.3s ease;
+			}
+			a:hover {
+				color: #222;
+				text-decoration: none;
+			}
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding-right: 1rem;
+				padding-left: 1rem;
+				color: #fff;
+			}
+			.btn {
+				border-radius: 0;
+				font-weight: 500;
+				letter-spacing: 0.1em;
+				font-size: 14px;
+				padding: 13px 30px;
+				text-transform: uppercase;
+			}
+			.btn-lg {
+				padding: 18px 34px;
+			}
+			.btn-primary {
+				background-image: radial-gradient(
+					circle farthest-corner at 22.4% 21.7%,
+					rgba(4, 189, 228, 1) 0%,
+					rgba(2, 83, 185, 1) 100.2%
+				);
+				border-color: #28b2f9;
+			}
+			.weight-500 {
+				font-weight: 500;
+			}
+			.social-icons a {
+				margin-right: 15px;
+				color: #999;
+				border: 1px solid rgba(255, 255, 255, 0.5);
+				padding: 19px 20px;
+				border-radius: 100%;
+				overflow: hidden;
+			}
+			.social-icons a:hover {
+				color: #28b2f9;
+			}
+			.social-icons {
+				padding-top: 32px;
+			}
+			ul.kk {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				margin-top: 15px;
+			}
+			ul.kk li {
+				padding-top: 10px;
+			}
+			ul.kk li a {
+				color: #fff;
+				font-weight: bold;
+			}
+			.footer-bg h6 {
+				color: #fff;
+			}
+			.hh {
+				background: rgb(255, 255, 255);
+				background: linear-gradient(
+					180deg,
+					rgba(5, 98, 186, 0.5) 0%,
+					rgba(5, 98, 186, 0) 100%
+				);
+				z-index: 9;
+			}
+			.section-bg-one {
+				background-image: url(img/black-bg.jpg);
+				background-repeat: no-repeat;
+				background-position: right top;
+			}
+			.section-bg-two {
+				background-image: url(img/blue-snow.png);
+				background-repeat: repeat;
+			}
+			.section-bg-three {
+				background-image: url(img/image-three.jpg);
+				background-repeat: no-repeat;
+				background-position: right top;
+			}
+			.nn img {
+				width: 100px !important;
+				height: 100px !important;
+				border-radius: 100px;
+				margin: 0 auto;
+			}
+			.text-top {
+				color: #fff;
+				position: absolute;
+				bottom: 0;
+				padding: 20px;
+			}
+			.img-overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.pp {
+				background: url(img/papyrus.png) repeat;
+			}
+			.footer-bg {
+				background-color: #363535;
+			}
+			.small,
+			small {
+				font-size: 90%;
+				font-weight: 400;
+				letter-spacing: 2px;
+			}
+			h1.slide-title {
+				margin-top: 0;
+				margin-bottom: 20px;
+				font-size: 3vw;
+				font-weight: bold;
+				color: #fff;
+			}
+			p.slide-subtitle {
+				font-size: 1vw;
+				font-weight: 100;
+				margin-top: 0;
+				color: #fff;
+			}
+			.bb {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			.gg img {
+				transition: all 0.3s ease;
+				cursor: pointer;
+			}
+			.gg img:hover {
+				transform: scale(1.1);
+				opacity: 0.8;
+			}
+			@media (max-width: 700px) {
+				.section-bg-one {
+					background: none;
+				}
+			}
+			@media (max-width: 998px) {
+				.navbar-collapse {
+					background: linear-gradient(
+						180deg,
+						rgba(5, 98, 186, 0.9) 0%,
+						rgba(5, 98, 186, 0.9) 100%
+					);
+					padding: 30px;
+				}
+			}
+			@media (max-width: 1200px) {
+				h1.slide-title {
+					font-size: 38px !important;
+				}
+				p.slide-subtitle {
+					font-size: 20px !important;
+				}
+				.section-bg-one {
+					background-position: right 0 top -20px !important;
+				}
+				.bb {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="position-relative hh">
+			<div class="container-fluid">
+				<div class="row py-1 px-5">
+					<div class="col-12 d-none d-md-block">
+						<div
+							class="d-flex py-2 justify-content-end mx-4 align-items-center"
+						></div>
+					</div>
+					<div class="col-12 pb-5 mb-5">
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<a class="navbar-brand mr-lg-5" href="#"
+								><img src="img/python-3-logo-svgrepo-com (2).svg  "
+							/></a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ml-auto mr-md-5 py-4 py-lg-0 lead"></ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container2">
+			<div data-am-fadeshow="next-prev-navigation">
+				<!-- Radio -->
+				<input type="radio" name="css-fadeshow" id="slide-1" />
+				<input type="radio" name="css-fadeshow" id="slide-2" />
+				<input type="radio" name="css-fadeshow" id="slide-3" />
+
+				<!-- Slides -->
+				<div class="fs-slides">
+					<div
+						class="fs-slide"
+						style="background-image: url(img/py_machine.jpg)"
+					>
+						<!-- Add content to images (sample) -->
+						<div
+							style="
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								color: white;
+								font-family: sans-serif;
+								text-align: center;
+								margin-top: 180px;
+								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+							"
+						>
+							<h5>Разработал:Буглак Иван Олегович</h5>
+							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
+						</div>
+					</div>
+					<div class="fs-slide" style="background-image: url(img//python.jpg)">
+						<div
+							style="
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								color: white;
+								font-family: sans-serif;
+								text-align: center;
+								margin-top: 180px;
+
+								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+							"
+						>
+							<h5>Разработал:Буглак Иван Олегович</h5>
+							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
+							<p class="slide-subtitle"></p>
+						</div>
+					</div>
+					<div class="fs-slide" style="background-image: url(img/python-2.jpg)">
+						<div
+							style="
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								color: white;
+								font-family: sans-serif;
+								text-align: center;
+								margin-top: 180px;
+								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+							"
+						>
+							<h5>Разработал:Буглак Иван Олегович</h5>
+							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
+						</div>
+					</div>
+				</div>
+
+				<!-- Quick Navigation -->
+				<div class="fs-quick-nav">
+					<label class="fs-quick-btn" for="slide-1"></label>
+					<label class="fs-quick-btn" for="slide-2"></label>
+					<label class="fs-quick-btn" for="slide-3"></label>
+				</div>
+
+				<!-- Prev Navigation -->
+				<div class="fs-prev-nav">
+					<label class="fs-prev-btn" for="slide-1"></label>
+					<label class="fs-prev-btn" for="slide-2"></label>
+					<label class="fs-prev-btn" for="slide-3"></label>
+				</div>
+
+				<!-- Next Navigation -->
+				<div class="fs-next-nav">
+					<label class="fs-next-btn" for="slide-1"></label>
+					<label class="fs-next-btn" for="slide-2"></label>
+					<label class="fs-next-btn" for="slide-3"></label>
+				</div>
+			</div>
+		</div>
+		<div style="height: 75vh; margin-bottom: -10px"></div>
+		<div class="section-bg-one" id="info">
+			<div class="container py-5">
+				<div class="row py-5 bb align-items-center">
+					<div class="col-md-6 col-12">
+						<h2 class="font-weight-bold mb-4">
+							Начните изучение с сегоднешнего дня
+						</h2>
+						<p class="lead mb-5">
+							Учебно-методический комплекс по Python предлагает студентам
+							разнообразные материалы для изучения языка программирования
+							Python. Включая учебные пособия, практические задания и
+							интерактивные уроки, этот комплекс поможет студентам освоить
+							основы Python и применить их в решении различных задач
+							программирования.
+						</p>
+					</div>
+					<div class="col-md-6 col-12 mt-5 mt-md-0">
+						<img
+							src="img/f0d11e1fe99b4efd0700df365f9a4841.png"
+							class="img-fluid"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-light section-bg-two pt-5">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2 class="mb-2">Разделы для изучения</h2>
+						<p class="lead mb-5">Начни изучение в нашем комплексе</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="first1">
+						<a href="introduction/introduction.html"
+							><img
+								src="img/1d8e7b059e313fc47711d030472f1291.jpg"
+								class="img-fluid mb-4"
+						/></a>
+
+						<h5><a href="introduction/introduction.html">Введение </a></h5>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="first1">
+						<a href="chapter_1/лекции/main_section_1_lec_1.html"
+							><img src="img/main_python.jpeg" class="img-fluid mb-4"
+						/></a>
+
+						<h5>
+							<a href="chapter_1/лекции/main_section_1_lec_1.html">Раздел 1 </a>
+						</h5>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="second2">
+						<a href="chapter_2/лекции/main_section_2_lec_1.html"
+							><img src="img/стд.jpg" class="img-fluid mb-4" />
+							<h5>
+								<a href="chapter_2/лекции/main_section_2_lec_1.html"
+									>Раздел 2</a
+								>
+							</h5></a
+						>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="third3">
+						<a href="chapter_3/лекции/main_section_3_lec_1.html"
+							><img src="img/ооп.jpg" class="img-fluid mb-4" />
+							<h5>
+								<a href="chapter_3/лекции/main_section_3_lec_1.html"
+									>Раздел 3</a
+								>
+							</h5></a
+						>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="fourth4">
+						<a href="chapter_4/лекции/main_section_4_lec_1.html"
+							><img src="img/интернет.jpg" class="img-fluid mb-4" />
+							<h5>
+								<a href="chapter_4/лекции/main_section_4_lec_1.html"
+									>Раздел 4</a
+								>
+							</h5></a
+						>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="five5">
+						<a href="chapter_5/лекции/main_section_5_lec_1.html"
+							><img src="img/pillow.png" class="img-fluid mb-4" />
+							<h5>
+								<a href="chapter_5/лекции/main_section_5_lec_1.html"
+									>Раздел 5</a
+								>
+							</h5></a
+						>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="six6">
+						<a href="chapter_6/лекции/main_section_6_lec_1.html"
+							><img src="img/kivy.jpg" class="img-fluid mb-4" />
+							<h5>
+								<a href="chapter_6/лекции/main_section_6_lec_1.html"
+									>Раздел 6</a
+								>
+							</h5></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bg">
+			<div class="container-fluid py-4">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 text-center text-lg-left">
+						<style>
+							h6 {
+								margin-top: 40px;
+							}
+						</style>
+						<img
+							src="img/python-3-logo-svgrepo-com (2).svg"
+							class="mb-5 pb-0 pb-lg-5 img-fluid"
+						/>
+					</div>
+					<div class="col-lg-8 col-md-12">
+						<div class="row text-white">
+							<div class="col-sm-6 col-12">
+								<h6 class="mb-4 text-white-50 small">Посмотреть</h6>
+								<a href="#info" class="btn btn-warning btn-lg"> Информацию </a>
+							</div>
+							<div class="col-sm-6 col-12">
+								<h6 class="text-white-50 small pt-5 pt-sm-0">
+									Следите за нами
+								</h6>
+								<div class="social-icons">
+									<a href="https://www.instagram.com/politex.mogilev/"
+										><i class="lni lni-instagram-filled"></i
+									></a>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row pt-5 mt-4">
+							<div class="col-sm-4 col-12">
+								<h6 class="text-white-50 small">HELPFUL LINKS</h6>
+								<ul class="kk">
+									<li><a href="">Directory</a></li>
+									<li><a href="">Editor Login</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-4 col-12">
+								<h6 class="text-white-50 small pt-5 pt-sm-0">CONTACT US</h6>
+								<ul class="kk">
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Work With Us</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-4 col-12">
+								<h6 class="text-white-50 small pt-5 pt-sm-0">POLICY</h6>
+								<ul class="kk">
+									<li><a href="">Справка</a></li>
+									<li><a href="">Privacy</a></li>
+								</ul>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тест на соответствие</title>
+		<style>
+			.item,
+			.dropzone {
+				padding: 10px;
+				margin: 5px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+			}
+
+			.right-column {
+				display: flex;
+				width: 330px;
+				margin-left: 20px; /* Добавляем небольшой отступ между колонками */
+			}
+
+			.dropzone {
+				min-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="match-container">
+			<div class="right-column">
+				<div class="dropzone" data-id="1">
+					<img src="5.jpg" alt="" height="200px" width="250px" />
+				</div>
+				<div class="dropzone" data-id="2">
+					<img src="6.jpg" alt="" height="200px" width="250px" />
+				</div>
+				<div class="dropzone" data-id="3">
+					<img src="7.jpg" alt="" height="200px" width="250px" />
+				</div>
+			</div>
+		</div>
+		<div class="left-column">
+			<div class="item" draggable="true" data-id="1">Элемент 1</div>
+			<div class="item" draggable="true" data-id="1">Элемент 2</div>
+			<div class="item" draggable="true" data-id="2">Элемент 3</div>
+			<div class="item" draggable="true" data-id="2">Элемент 4</div>
+			<div class="item" draggable="true" data-id="3">Элемент 5</div>
+			<div class="item" draggable="true" data-id="3">Элемент 6</div>
+		</div>
+
+		<div class="card-body">
+			<p class="card-text centerText">
+				<strong>
+					2. Какое уравнение описывает закон всемирного тяготения?
+				</strong>
+			</p>
+			<p>
+				<input id="input1" type="radio" name="q2" value="a" />&nbsp;&nbsp;1)
+				E=mc^2
+			</p>
+			<p>
+				<input id="input2" type="radio" name="q2" value="b" />&nbsp;&nbsp;2)
+				F=ma
+			</p>
+			<p>
+				<input id="input3" type="radio" name="q2" value="c" />&nbsp;&nbsp;3)
+				E=hf
+			</p>
+			<p>
+				<input id="input4" type="radio" name="q2" value="d" />&nbsp;&nbsp;4)
+				F=G(m1*m2)/r^2
+			</p>
+		</div>
+
+		<div class="card-body">
+			<p class="card-text centerText">
+				<strong>
+					3. Как называется молекула, которая является основным составляющим
+					белка?
+				</strong>
+			</p>
+			<p>
+				<input id="input1" type="checkbox" name="q3" value="a" />&nbsp;&nbsp; a)
+				ДНК
+			</p>
+			<p>
+				<input id="input2" type="checkbox" name="q3" value="b" />&nbsp;&nbsp;b)
+				РНК
+			</p>
+			<p>
+				<input id="input3" type="checkbox" name="q3" value="c" />&nbsp;&nbsp;c)
+				Углеводы
+			</p>
+			<p>
+				<input id="input4" type="checkbox" name="q3" value="d" />&nbsp;&nbsp;d)
+				Аминокислоты
+			</p>
+		</div>
+
+		<div class="card-body">
+			<p class="card-text centerText">
+				<strong> 4. если иголкой тыкнуть шарик , он лопнет? </strong>
+			</p>
+			<div class="input-group mb-3">
+				<select id="select2" class="form-select" id="inputGroupSelect05">
+					<option selected disabled selected hidden>Выберите...</option>
+					<option value="a">Да</option>
+					<option value="b">Нет</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="card-body">
+			<p class="card-text centerText">
+				<strong>5. Добавьте недостающее слово:</strong>
+			</p>
+			<p>Сколько пальцев у человека?</p>
+			<div class="input-group flex-nowrap">
+				<span class="input-group-text" id="addon-wrapping"></span>
+				<input
+					id="input5"
+					type="text"
+					class="form-control"
+					aria-describedby="addon-wrapping"
+				/>
+			</div>
+		</div>
+
+		<br />
+		<button
+			class="btn btn-primary"
+			style="width: 250px"
+			onclick="checkAnswers()"
+		>
+			Проверить
+		</button>
+
+		<script>
+			function checkAnswers() {
+				const resultDisplay = document.getElementById('result')
+				const q2Answer = document.querySelector('input[name="q2"]:checked')
+				const q3Answers = document.querySelectorAll('input[name="q3"]:checked')
+				const q4Answer = document.getElementById('select2')
+				const q5Answer = document.getElementById('input5')
+
+				let correctCount = 0
+				let incorrectCount = 0
+
+				if (!q2Answer || q2Answer.value !== 'd') {
+					incorrectCount++
+				} else {
+					correctCount++
+				}
+
+				if (q3Answers.length !== 1 || !q3Answers[0].value === 'd') {
+					incorrectCount++
+				} else {
+					correctCount++
+				}
+
+				if (!q4Answer || q4Answer.value !== 'b') {
+					incorrectCount++
+				} else {
+					correctCount++
+				}
+
+				if (!q5Answer || q5Answer.value.trim().toLowerCase() !== 'девять') {
+					incorrectCount++
+				} else {
+					correctCount++
+				}
+
+				resultDisplay.textContent = `Правильных ответов: ${correctCount}\n Неправильных ответов: ${incorrectCount}`
+				alert(
+					`Правильных ответов: ${correctCount}\n Неправильных ответов: ${incorrectCount}`
+				)
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.spinner {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			perspective: 600px;
+		}
+
+		.spinner-inner {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transform-style: preserve-3d;
+			animation: rotate 3s infinite linear;
+		}
+
+		.spinner-inner::before {
+			content: '';
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-image: url('python-svgrepo-com.svg'); /* Путь к вашему изображению */
+			background-size: cover; /* Растянуть изображение, чтобы оно заполнило весь блок */
+			opacity: 0.7;
+			border-radius: 50%;
+			animation: spin 3s infinite linear;
+		}
+
+		@keyframes rotate {
+			from {
+				transform: rotateY(0deg);
+			}
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+
+		@keyframes spin {
+			from {
+				transform: rotateX(0deg);
+			}
+			to {
+				transform: rotateX(360deg);
+			}
+		}
+	</style>
+	<body>
+		<div class="spinner">
+			<div class="spinner-inner"></div>
+		</div>
+	</body>
+	<script>
+		// Добавление класса для начала анимации
+		document.querySelector('.spinner-inner').classList.add('spin-animation')
+
+		// Удаление класса для остановки анимации
+		document.querySelector('.spinner-inner').classList.remove('spin-animation')
+	</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Угадай язык программирования</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Угадай язык программирования</h1>
+		<p>Попробуйте угадать язык программирования, который я загадал.</p>
+		<input type="text" id="guess" placeholder="Введите ваше предположение" />
+		<button onclick="checkGuess()">Проверить</button>
+		<p id="result"></p>
+
+		<script>
+			const languages = ['Python', 'JavaScript', 'Java', 'C++', 'Ruby']
+			const randomLanguage =
+				languages[Math.floor(Math.random() * languages.length)]
+
+			function checkGuess() {
+				const guess = document.getElementById('guess').value
+				const result = document.getElementById('result')
+
+				if (guess.toLowerCase() === randomLanguage.toLowerCase()) {
+					result.textContent = `Поздравляем! Вы угадали. Я загадал язык программирования ${randomLanguage}.`
+				} else {
+					result.textContent = `Неверно. Попробуйте еще раз.`
+				}
+			}
+		</script>
+	</body>
+</html>

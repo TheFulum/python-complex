@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Учебно-методическое пособие</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/python complex/css/slide-show.css" />
+    <link rel="icon" type="image/svg" sizes="72x72" href="../resource/python-svgrepo-com.svg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .social-icons a {
+            margin-right: 15px;
+            color: #999;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 19px 20px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+        .social-icons a:hover {
+            color: #28b2f9;
+        }
+        .social-icons {
+            padding-top: 32px;
+        }
+        .footer-bg {
+            background-color: #363535;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" style="color: black" aria-current="page" href="../лекции/main_section_5_lec_1.html">Лекции</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" style="color: black" aria-current="page" href="../лабы/main_section_5_lab_1.html">Лабораторная работа</a>
+                        <a class="flex-sm-fill text-sm-center nav-link active" style="color: black" href="../тесты/main_section_5_test_1.html">Тесты</a>
+                    </nav>
+
+                    <div class="card-header" style="text-align: right">
+                        Тесты:&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-outline-primary" href="main_section_4_test_1.html" role="button" style="color: black">1</a>
+                    </div>
+
+                    <!-- СОДЕРЖИМОЕ ТЕСТА -->
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Тест №3 &nbsp;&nbsp; Разбор URL-адреса</h5><br>
+                        
+                        <!-- Вопрос 1 (Текст) -->
+                        <p class="card-text centerText">
+                            <strong>1. Ответьте на вопрос</strong>
+                        </p>
+                        <p>Как называется часть URL-адреса, которая указывает на протокол передачи данных (например, http или https)?</p>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping"></span>
+                            <input id="input1" type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="Введите ответ..." />
+                        </div>
+                    </div>
+                    <br />
+                    
+                    <!-- Вопрос 2 (Соотнесение) -->
+                    <div class="card bigImage">
+                        <div class="card-body">
+                            <p class="card-text centerText">
+                                <strong>2. Соотнесите компонент URL с его описанием:</strong>
+                            </p>
+                            <p>1. Протокол передачи данных.</p>
+                            <p>2. Доменное имя или IP-адрес сервера.</p>
+                            <p>3. Путь к ресурсу на сервере.</p>
+                            <p>4. Параметры запроса (строка запроса).</p>
+                            
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">1</label>
+                                <select id="select1_1" class="form-select">
+                                    <option selected disabled hidden>Выберите...</option>
+                                    <option value="1">Хост (Host)</option>
+                                    <option value="2">Схема (Scheme)</option>
+                                    <option value="3">Путь (Path)</option>
+                                    <option value="4">Строка запроса (Query String)</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect02">2</label>
+                                <select id="select1_2" class="form-select">
+                                    <option selected disabled hidden>Выберите...</option>
+                                    <option value="1">Хост (Host)</option>
+                                    <option value="2">Схема (Scheme)</option>
+                                    <option value="3">Путь (Path)</option>
+                                    <option value="4">Строка запроса (Query String)</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect03">3</label>
+                                <select id="select1_3" class="form-select">
+                                    <option selected disabled hidden>Выберите...</option>
+                                    <option value="1">Хост (Host)</option>
+                                    <option value="2">Схема (Scheme)</option>
+                                    <option value="3">Путь (Path)</option>
+                                    <option value="4">Строка запроса (Query String)</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect04">4</label>
+                                <select id="select1_4" class="form-select">
+                                    <option selected disabled hidden>Выберите...</option>
+                                    <option value="1">Хост (Host)</option>
+                                    <option value="2">Схема (Scheme)</option>
+                                    <option value="3">Путь (Path)</option>
+                                    <option value="4">Строка запроса (Query String)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Вопрос 3 (Радио) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>3. Какой символ используется для разделения имени хоста и порта в URL?</strong>
+                        </p>
+                        <p><input id="q3_1" type="radio" name="q3" value="a" />&nbsp;&nbsp;а) : (двоеточие)</p>
+                        <p><input id="q3_2" type="radio" name="q3" value="b" />&nbsp;&nbsp;б) ; (точка с запятой)</p>
+                        <p><input id="q3_3" type="radio" name="q3" value="c" />&nbsp;&nbsp;в) | (вертикальная черта)</p>
+                        <p><input id="q3_4" type="radio" name="q3" value="d" />&nbsp;&nbsp;г) & (амперсанд)</p>
+                    </div>
+                    
+                    <!-- Вопрос 4 (Чекбоксы) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>4. Какие из перечисленных элементов могут входить в состав URL-адреса?</strong>
+                        </p>
+                        <p><input id="q4_1" type="checkbox" name="q4" value="a" />&nbsp;&nbsp; а) Схема (протокол)</p>
+                        <p><input id="q4_2" type="checkbox" name="q4" value="b" />&nbsp;&nbsp; б) Имя пользователя и пароль</p>
+                        <p><input id="q4_3" type="checkbox" name="q4" value="c" />&nbsp;&nbsp; в) Якорь (фрагмент)</p>
+                        <p><input id="q4_4" type="checkbox" name="q4" value="d" />&nbsp;&nbsp; г) Тип операционной системы сервера</p>
+                    </div>
+                    
+                    <!-- Вопрос 5 (Выпадающий список Да/Нет) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>5. Верно ли, что строка запроса (query string) всегда начинается с символа "?"?</strong>
+                        </p>
+                        <div class="input-group mb-3">
+                            <select id="select2" class="form-select">
+                                <option selected disabled hidden>Выберите...</option>
+                                <option value="a">Да</option>
+                                <option value="b">Нет</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Вопрос 6 (Текст с пропуском) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>6. Добавьте недостающее слово:</strong>
+                        </p>
+                        <p>В URL-адресе <strong>https://www.example.com:8080/index.html</strong> порт равен ...</p>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping"></span>
+                            <input id="input6" type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="Введите число..." />
+                        </div>
+                    </div>
+                    
+                    <!-- Вопрос 7 (Чекбоксы) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>7. Какие протоколы могут использоваться в схеме URL?</strong>
+                        </p>
+                        <p><input id="q7_1" type="checkbox" name="q7" value="a" />&nbsp;&nbsp; а) HTTP</p>
+                        <p><input id="q7_2" type="checkbox" name="q7" value="b" />&nbsp;&nbsp; б) HTTPS</p>
+                        <p><input id="q7_3" type="checkbox" name="q7" value="c" />&nbsp;&nbsp; в) FTP</p>
+                        <p><input id="q7_4" type="checkbox" name="q7" value="d" />&nbsp;&nbsp; г) SMTP</p>
+                    </div>
+                    
+                    <!-- Вопрос 8 (Радио) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>8. Какой символ используется для разделения параметров в строке запроса?</strong>
+                        </p>
+                        <p><input id="q8_1" type="radio" name="q8" value="a" />&nbsp;&nbsp; а) ? (вопросительный знак)</p>
+                        <p><input id="q8_2" type="radio" name="q8" value="b" />&nbsp;&nbsp; б) & (амперсанд)</p>
+                        <p><input id="q8_3" type="radio" name="q8" value="c" />&nbsp;&nbsp; в) # (решетка)</p>
+                        <p><input id="q8_4" type="radio" name="q8" value="d" />&nbsp;&nbsp; г) = (равно)</p>
+                    </div>
+                    
+                    <!-- Вопрос 9 (Выпадающий список Да/Нет) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>9. Является ли фрагмент (якорь) частью URL, которая отправляется на сервер?</strong>
+                        </p>
+                        <div class="input-group mb-3">
+                            <select id="select9" class="form-select">
+                                <option selected disabled hidden>Выберите...</option>
+                                <option value="a">Да</option>
+                                <option value="b">Нет</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Вопрос 10 (Чекбоксы) -->
+                    <div class="card-body">
+                        <p class="card-text centerText">
+                            <strong>10. Какие из следующих URL-адресов являются корректными?</strong>
+                        </p>
+                        <p><input id="q10_1" type="checkbox" name="q10" value="a" />&nbsp;&nbsp; а) https://example.com</p>
+                        <p><input id="q10_2" type="checkbox" name="q10" value="b" />&nbsp;&nbsp; б) http://localhost:3000/api/users</p>
+                        <p><input id="q10_3" type="checkbox" name="q10" value="c" />&nbsp;&nbsp; в) ftp://files.example.org/docs/file.txt</p>
+                        <p><input id="q10_4" type="checkbox" name="q10" value="d" />&nbsp;&nbsp; г) https:///example.com</p>
+                    </div>
+                    
+                    <br />
+                    <button class="btn btn-primary" style="width: 250px; margin-bottom: 20px;" onclick="checkAnswers()">Проверить</button>
+                    <div id="result"></div>
+                    
+                    <script>
+                    function checkAnswers() {
+                        let resultText = "Результаты проверки:\n";
+                        let score = 0;
+                        let total = 10;
+                    
+                        // 1. Текст (схема или протокол)
+                        const q1 = document.getElementById('input1').value.trim().toLowerCase();
+                        if (q1 === "схема" || q1 === "протокол" || q1 === "схема (протокол)" || q1 === "scheme") {
+                            score++;
+                            resultText += "1. Верно (Схема/Протокол)\n";
+                        } else {
+                            resultText += "1. Неверно (Правильно: Схема или Протокол)\n";
+                        }
+                    
+                        // 2. Соотнесение
+                        const s1 = document.getElementById('select1_1').value;
+                        const s2 = document.getElementById('select1_2').value;
+                        const s3 = document.getElementById('select1_3').value;
+                        const s4 = document.getElementById('select1_4').value;
+                        if (s1 === "2" && s2 === "1" && s3 === "3" && s4 === "4") {
+                            score++;
+                            resultText += "2. Верно (1-Scheme, 2-Host, 3-Path, 4-Query String)\n";
+                        } else {
+                            resultText += "2. Неверно (Правильно: 1-2, 2-1, 3-3, 4-4)\n";
+                        }
+                    
+                        // 3. Радио (двоеточие)
+                        const q3 = document.querySelector('input[name="q3"]:checked');
+                        if (q3 && q3.value === "a") {
+                            score++;
+                            resultText += "3. Верно (двоеточие)\n";
+                        } else {
+                            resultText += "3. Неверно (Правильно: двоеточие :)\n";
+                        }
+                    
+                        // 4. Чекбоксы (a, b, c - верно, d - нет)
+                        const q4_1 = document.getElementById('q4_1').checked;
+                        const q4_2 = document.getElementById('q4_2').checked;
+                        const q4_3 = document.getElementById('q4_3').checked;
+                        const q4_4 = document.getElementById('q4_4').checked;
+                        if (q4_1 && q4_2 && q4_3 && !q4_4) {
+                            score++;
+                            resultText += "4. Верно (a, b, c)\n";
+                        } else {
+                            resultText += "4. Неверно (Правильно: a, b, c)\n";
+                        }
+                    
+                        // 5. Да/Нет (Да)
+                        const q5 = document.getElementById('select2').value;
+                        if (q5 === "a") {
+                            score++;
+                            resultText += "5. Верно (Да)\n";
+                        } else {
+                            resultText += "5. Неверно (Правильно: Да)\n";
+                        }
+                    
+                        // 6. Текст (8080)
+                        const q6 = document.getElementById('input6').value.trim();
+                        if (q6 === "8080") {
+                            score++;
+                            resultText += "6. Верно (8080)\n";
+                        } else {
+                            resultText += "6. Неверно (Правильно: 8080)\n";
+                        }
+                    
+                        // 7. Чекбоксы (a, b, c, d - все верно)
+                        const q7_1 = document.getElementById('q7_1').checked;
+                        const q7_2 = document.getElementById('q7_2').checked;
+                        const q7_3 = document.getElementById('q7_3').checked;
+                        const q7_4 = document.getElementById('q7_4').checked;
+                        if (q7_1 && q7_2 && q7_3 && q7_4) {
+                            score++;
+                            resultText += "7. Верно (все варианты)\n";
+                        } else {
+                            resultText += "7. Неверно (Правильно: все варианты - HTTP, HTTPS, FTP, SMTP)\n";
+                        }
+                    
+                        // 8. Радио (амперсанд)
+                        const q8 = document.querySelector('input[name="q8"]:checked');
+                        if (q8 && q8.value === "b") {
+                            score++;
+                            resultText += "8. Верно (& - амперсанд)\n";
+                        } else {
+                            resultText += "8. Неверно (Правильно: & - амперсанд)\n";
+                        }
+                    
+                        // 9. Да/Нет (Нет)
+                        const q9 = document.getElementById('select9').value;
+                        if (q9 === "b") {
+                            score++;
+                            resultText += "9. Верно (Нет, якорь не отправляется на сервер)\n";
+                        } else {
+                            resultText += "9. Неверно (Правильно: Нет)\n";
+                        }
+                    
+                        // 10. Чекбоксы (a, b, c - верно, d - нет)
+                        const q10_1 = document.getElementById('q10_1').checked;
+                        const q10_2 = document.getElementById('q10_2').checked;
+                        const q10_3 = document.getElementById('q10_3').checked;
+                        const q10_4 = document.getElementById('q10_4').checked;
+                        if (q10_1 && q10_2 && q10_3 && !q10_4) {
+                            score++;
+                            resultText += "10. Верно (a, b, c)\n";
+                        } else {
+                            resultText += "10. Неверно (Правильно: a, b, c)\n";
+                        }
+                    
+                        // Вывод результата
+                        const resultDiv = document.getElementById('result');
+                        resultDiv.innerHTML = `<strong>Ваш результат: ${score} из ${total}</strong><br><pre style="white-space: pre-wrap;">${resultText}</pre>`;
+                        console.log(resultText);
+                    }
+                    </script>
+                    
+                    <!-- КОНЕЦ СОДЕРЖИМОГО ТЕСТА -->
+                </div> <!-- закрываем card -->
+            </div> <!-- закрываем col-sm-8 -->
+
+            <!-- Меню (колонка справа) -->
+            <div class="col-sm-4">
+                <h3 style="text-align: center">Меню</h3>
+                <ol class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../introduction/introduction.html" role="button" title="Введение">Введение</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark active" href="../../chapter_1/тесты/main_section_1_test_1.html" role="button" title="Синтаксис. Основные типы данных Python">Раздел 1 - Синтаксис. Основные типы данных Python</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../chapter_2/лекции/main_section_2_lec_1.html" role="button" title="Структурированные типы данных">Раздел 2 - Структурированные типы данных</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../OKR_1/okr_1.html" role="button" title="Обязательная контрольная работа №1">Обязательная контрольная работа №1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../chapter_3/лекции/main_section_3_lec_1.html" role="button" title="Объектно-ориентированное программирование в Python">Раздел 3 - Объектно-ориентированное программирование в Python</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../chapter_4/лекции/main_section_4_lec_1.html" role="button" title="Раздел 4 - Взаимодействие с сетью интернет. Клиент-серверные приложения в Python. Сервер-сокетные соединения">Раздел 4 - Взаимодействие с сетью интернет. Клиент-серверные приложения в Python. Сервер-сокетные соединения</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../chapter_5/лекции/main_section_5_lec_1.html" role="button" title="Фреймворки и библиотеки языка Python">Раздел 5 - Фреймворки и библиотеки языка Python</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" style="text-align: left" href="../../OKR_2/okr_2.html" role="button" title="Обязательная контрольная работа №2">Обязательная контрольная работа №2</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <a class="btn btn-outline-dark" href="../../index.html" role="button" title="На главную">На главную</a>
+                    </li>
+                </ol>
+            </div> <!-- закрываем col-sm-4 -->
+        </div> <!-- закрываем row -->
+    </div> <!-- закрываем container-fluid -->
+
+    <!-- Футер -->
+    <div class="footer-bg">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center text-lg-left">
+                    <img src="../resource/python-3-logo-svgrepo-com (2).svg" class="mb-5 pb-0 pb-lg-5 img-fluid" />
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row text-white">
+                        <div class="col-sm-6 col-12">
+                            <h6 class="mb-4 text-white-50 small">Посмотреть</h6>
+                            <a href="../../index.html#info" class="btn btn-warning btn-lg"> Информацию </a>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <h6 class="text-white-50 small pt-5 pt-sm-0">Следите за нами</h6>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/politex.mogilev/"><i class="lni lni-instagram-filled"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+</html>

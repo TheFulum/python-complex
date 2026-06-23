@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тест на соответствие</title>
+		<style>
+			.item,
+			.dropzone {
+				padding: 10px;
+				margin: 5px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+			}
+			.right-column {
+				display: flex;
+				width: 330px;
+				margin-left: 20px; /* Добавляем небольшой отступ между колонками */
+			}
+			.dropzone {
+				min-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="match-container">
+			<div class="right-column">
+				<div class="dropzone" data-id="1">
+					<img src="5.jpg" alt="" height="200px" width="300px" />
+				</div>
+				<div class="dropzone" data-id="2">
+					<img src="6.jpg" alt="" height="200px" width="300px" />
+				</div>
+				<div class="dropzone" data-id="3">
+					<img src="7.jpg" alt="" height="200px" width="300px" />
+				</div>
+			</div>
+		</div>
+		<div class="left-column">
+			<div class="item" draggable="true" data-id="1">Элемент 1</div>
+			<div class="item" draggable="true" data-id="1">Элемент 2</div>
+			<div class="item" draggable="true" data-id="2">Элемент 3</div>
+			<div class="item" draggable="true" data-id="2">Элемент 4</div>
+			<div class="item" draggable="true" data-id="3">Элемент 5</div>
+			<div class="item" draggable="true" data-id="3">Элемент 6</div>
+		</div>
+		<div id="result"></div>
+		<button id="check-btn">Проверить</button>
+
+		<script>
+			function runMatchTest() {
+				const dropzones = document.querySelectorAll('.dropzone')
+				const resultDisplay = document.getElementById('result')
+
+				let correctCount = 0
+
+				dropzones.forEach(dropzone => {
+					const itemId = dropzone.dataset.id
+					const item = dropzone.querySelector('.item')
+					if (item.dataset.id === itemId) {
+						correctCount++
+					}
+				})
+
+				resultDisplay.textContent = alert(
+					`Правильных ответов: ${correctCount}\n Неправильных ответов: ${
+						dropzones.length - correctCount
+					}`
+				)
+			}
+
+			document.addEventListener('DOMContentLoaded', function () {
+				const items = document.querySelectorAll('.item')
+
+				items.forEach(item => {
+					item.addEventListener('dragstart', function () {
+						draggedItem = this
+					})
+					item.addEventListener('dragend', function () {
+						draggedItem = null
+					})
+				})
+
+				const dropzones = document.querySelectorAll('.dropzone')
+
+				dropzones.forEach(dropzone => {
+					dropzone.addEventListener('dragover', function (e) {
+						e.preventDefault()
+					})
+					dropzone.addEventListener('dragenter', function (e) {
+						e.preventDefault()
+						this.style.background = '#f0f0f0'
+					})
+					dropzone.addEventListener('dragleave', function () {
+						this.style.background = 'none'
+					})
+					dropzone.addEventListener('drop', function () {
+						this.appendChild(draggedItem)
+						this.style.background = 'none'
+					})
+				})
+
+				document
+					.getElementById('check-btn')
+					.addEventListener('click', runMatchTest)
+			})
+		</script>
+	</body>
+</html>

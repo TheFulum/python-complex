@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Разделы с использованием Bootstrap</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+		/>
+		<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/slide-show.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="72x72"
+			href="img/python-svgrepo-com.svg"
+		/>
+		<style>
+			#content {
+				position: absolute;
+				top: 100%; /* Размещаем контент под кнопкой */
+				left: 0;
+				background-color: #fff; /* Фон для контента */
+				width: 100%;
+				padding: 20px;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для контента */
+				display: none; /* Скрываем контент по умолчанию */
+			}
+			.container h1 {
+				text-align: center;
+				margin-bottom: 50px;
+			}
+
+			.footer-bg {
+				background: #212529;
+				margin-top: 100px;
+			}
+			.footer-bg h6 {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Раздел 1:ЧТО-ТО</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<button id="lecturesBtn" class="btn btn-primary btn-block">
+						Лекции
+					</button>
+					<div id="lecturesContent" class="content">
+						<h2>Лекции</h2>
+						<ul>
+							<li><a href="lec_1_1.pdf" target="_blank">Лекция 1</a></li>
+							<li><a href="лекции_2.pdf" target="_blank">Лекция 2</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<button id="labsBtn" class="btn btn-warning btn-block">
+						Лабораторные работы
+					</button>
+					<div id="labsContent" class="content">
+						<h2>Лабораторные работы</h2>
+						<ul>
+							<li>
+								<a href="лаб_работа_1.pdf" target="_blank"
+									>Лабораторная работа 1</a
+								>
+							</li>
+							<li>
+								<a href="лаб_работа_2.pdf" target="_blank"
+									>Лабораторная работа 2</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<button id="testsBtn" class="btn btn-primary btn-block">Тесты</button>
+					<div id="testsContent" class="content">
+						<h2>Тесты</h2>
+						<a href="test1.html" target="_blank">Тест 1</a>
+						<!-- Добавьте другие тесты по аналогии -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bg">
+			<div class="container py-5">
+				<div class="row py-5">
+					<div class="col-lg-4 col-md-12 text-center text-lg-left">
+						<img
+							src="img/python-3-logo-svgrepo-com (2).svg"
+							class="mb-5 pb-0 pb-lg-5 img-fluid"
+						/>
+					</div>
+					<div class="col-lg-8 col-md-12">
+						<div class="row text-white">
+							<div class="col-sm-6 col-12">
+								<h6 class="mb-4 text-white-50 small">Посмотреть</h6>
+								<a href="#" class="btn btn-warning btn-lg"> Информацию </a>
+							</div>
+							<div class="col-sm-6 col-12">
+								<h6 class="text-white-50 small pt-5 pt-sm-0">
+									Следите за нами
+								</h6>
+								<div class="social-icons">
+									<a href="https://www.instagram.com/politex.mogilev/"
+										><i class="lni lni-instagram-filled"></i
+									></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Обработчики событий для кнопок
+			document
+				.getElementById('lecturesBtn')
+				.addEventListener('click', function () {
+					document.getElementById('lecturesContent').style.display = 'block'
+					document.getElementById('labsContent').style.display = 'none'
+					document.getElementById('testsContent').style.display = 'none'
+				})
+
+			document.getElementById('labsBtn').addEventListener('click', function () {
+				document.getElementById('lecturesContent').style.display = 'none'
+				document.getElementById('labsContent').style.display = 'block'
+				document.getElementById('testsContent').style.display = 'none'
+			})
+
+			document
+				.getElementById('testsBtn')
+				.addEventListener('click', function () {
+					document.getElementById('lecturesContent').style.display = 'none'
+					document.getElementById('labsContent').style.display = 'none'
+					document.getElementById('testsContent').style.display = 'block'
+				})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тест</title>
+	</head>
+	<body>
+		<form id="quiz">
+			<h3>Вопрос 1: Что такое HTML?</h3>
+			<input type="checkbox" name="q1" value="a" /> a) Язык разметки
+			документов<br />
+			<input type="checkbox" name="q1" value="b" /> b) Каскадные таблицы
+			стилей<br />
+			<input type="checkbox" name="q1" value="c" /> c) Язык программирования<br />
+			<input type="checkbox" name="q1" value="d" /> d) Графический редактор<br />
+			<br />
+			<button type="button" onclick="checkAnswers()">Проверить</button>
+		</form>
+
+		<script>
+			function checkAnswers() {
+				const selectedAnswers = document.querySelectorAll(
+					'input[name="q1"]:checked'
+				)
+				let correct = true
+
+				// Проверяем, что выбраны только варианты "a" и "b"
+				q3Answer.forEach(answer => {
+					if (answer.value !== 'a' && answer.value !== 'b') {
+						correct = false
+					}
+				})
+
+				if (correct && selectedAnswers.length === 2) {
+					alert('Правильно! Вы выбрали варианты "a" и "b".')
+				} else {
+					alert('Неправильно! Пожалуйста, выберите только варианты "a" и "b".')
+				}
+			}
+		</script>
+	</body>
+</html>
