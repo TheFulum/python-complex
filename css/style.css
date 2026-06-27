@@ -233,7 +233,7 @@
 
 @media (min-width: 992px) {
 	h1.slide-title {
-		font-size: 38px !important;
+		font-size: 50px !important;
 	}
 
 	p.slide-subtitle {
@@ -373,7 +373,7 @@
 	}
 
 	h1.slide-title {
-		font-size: 24px !important;
+		font-size: 20px !important;
 		line-height: 1.25 !important;
 		margin-bottom: 12px !important;
 	}
@@ -486,7 +486,7 @@
 	}
 
 	h1.slide-title {
-		font-size: 19px !important;
+		font-size: 20px !important;
 		line-height: 1.3 !important;
 		margin-bottom: 8px !important;
 	}
