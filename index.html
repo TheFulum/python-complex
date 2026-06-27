@@ -73,10 +73,6 @@
 			.lead {
 				line-height: 34px;
 			}
-			.navbar-brand img {
-				height: 100px;
-				width: auto;
-			}
 			a {
 				color: #28b2f9;
 				transition: all 0.3s ease;
@@ -223,36 +219,6 @@
     transform: scale(1.1);
     opacity: 0.8;
 }
-			@media (max-width: 700px) {
-				.section-bg-one {
-					background: none;
-				}
-				nav a img {
-					margin-left: -1050px;
-				}
-				.menu-wrap .menu {
-					margin-left: -460px;
-					margin-top: -800px;
-					position: fixed;
-				}
-			}
-			@media (max-width: 998px) {
-				.navbar-collapse {
-					background: linear-gradient(
-						180deg,
-						rgba(5, 98, 186, 0.9) 0%,
-						rgba(5, 98, 186, 0.9) 100%
-					);
-					padding: 30px;
-				}
-				nav a img {
-					margin-left: -1050px;
-				}
-				/* .menu-wrap .menu {
-					margin-left: -440px;
-					margin-top: -800px;
-				} */
-			}
 			@media (max-width: 1200px) {
 				h1.slide-title {
 					font-size: 38px !important;
@@ -263,78 +229,57 @@
 				.section-bg-one {
 					background-position: right 0 top -20px !important;
 				}
-				.bb {
-					margin-top: 10px;
-					margin-bottom: 10px;
-				}
-				nav a img {
-					margin-left: -1050px;
-				}
 			}
-			/* .menu-wrap .menu {
-				margin-left: -440px;
-				margin-top: -800px;
-			} */
 		</style>
 	</head>
 	<body>
 		<div class="position-relative hh">
 			<div class="container-fluid">
 				<div class="row py-1 px-5">
-					<div class="col-12 d-none d-md-block">
-						<div
-							class="d-flex py-2 justify-content-end mx-4 align-items-center"
-						></div>
-					</div>
-					<div class="col-12 pb-5 mb-5">
-						<nav class="navbar navbar-expand-lg navbar-dark">
-							<a
-								class="navbar-brand mr-lg-5"
-								href="#"
-								style="margin-left: 1200px; margin-top: -40px"
-								><img src="img/python-3-logo-svgrepo-com (2).svg  "
-							/></a>
-							<div class="menu-wrap">
-								<input type="checkbox" class="toggler" />
-								<div class="hamburger"><div></div></div>
-								<div class="menu">
-									<div>
+					<div class="col-12">
+						<nav class="navbar navbar-dark site-header">
+							<div class="header-inner">
+								<div class="menu-wrap">
+									<input type="checkbox" class="toggler" id="nav-toggler" />
+									<label class="hamburger" for="nav-toggler"><div></div></label>
+									<div class="menu">
 										<div>
-											<ul>
-												<li>
-													<a href="chapter_1/лекции/main_section_1_lec_1.html"
-														>Синтаксис. Основные типы данных Python</a
-													>
-												</li>
-												<li>
-													<a href="chapter_2/лекции/main_section_2_lec_1.html"
-														>Структурированные типы данных</a
-													>
-												</li>
-												<li>
-													<a href="chapter_3/лекции/main_section_3_lec_1.html"
-														>Объектно-ориентированное программирование в Python
-													</a>
-												</li>
-												<li>
-													<a href="chapter_4/лекции/main_section_4_lec_1.html"
-														>Взаимодействие с сетью интернет. Клиент-серверные 
-                                                         приложения в Python. Сервер-сокетные соединения
-
-													</a>
-												</li>
-												<li>
-													<a href="chapter_5/лекции/main_section_5_lec_1.html"
-														>Фреймворки и библиотеки языка Python
-													</a>
-												</li>
-											</ul>
+											<div>
+												<ul>
+													<li>
+														<a href="chapter_1/лекции/main_section_1_lec_1.html"
+															>Синтаксис. Основные типы данных Python</a
+														>
+													</li>
+													<li>
+														<a href="chapter_2/лекции/main_section_2_lec_1.html"
+															>Структурированные типы данных</a
+														>
+													</li>
+													<li>
+														<a href="chapter_3/лекции/main_section_3_lec_1.html"
+															>Объектно-ориентированное программирование в Python
+														</a>
+													</li>
+													<li>
+														<a href="chapter_4/лекции/main_section_4_lec_1.html"
+															>Взаимодействие с сетью интернет. Клиент-серверные
+															приложения в Python. Сервер-сокетные соединения</a
+														>
+													</li>
+													<li>
+														<a href="chapter_5/лекции/main_section_5_lec_1.html"
+															>Фреймворки и библиотеки языка Python</a
+														>
+													</li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav ml-auto mr-md-5 py-4 py-lg-0 lead"></ul>
+								<a class="navbar-brand" href="index.html">
+									<img src="img/python-3-logo-svgrepo-com (2).svg" alt="Python" />
+								</a>
 							</div>
 						</nav>
 					</div>
@@ -355,58 +300,18 @@
 						class="fs-slide"
 						style="background-image: url(img/py_machine.jpg)"
 					>
-						<!-- Add content to images (sample) -->
-						<div
-							style="
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%, -50%);
-								color: white;
-								font-family: sans-serif;
-								text-align: center;
-								margin-top: 180px;
-								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-							"
-						>
+						<div class="slide-content">
 							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
 						</div>
 					</div>
 					<div class="fs-slide" style="background-image: url(img//python.jpg)">
-						<div
-							style="
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%, -50%);
-								color: white;
-								font-family: sans-serif;
-								text-align: center;
-								margin-top: 180px;
-
-								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-							"
-						>
-							
+						<div class="slide-content">
 							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
 							<p class="slide-subtitle"></p>
 						</div>
 					</div>
 					<div class="fs-slide" style="background-image: url(img/python-2.jpg)">
-						<div
-							style="
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%, -50%);
-								color: white;
-								font-family: sans-serif;
-								text-align: center;
-								margin-top: 180px;
-								text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-							"
-						>
-							
+						<div class="slide-content">
 							<h1 class="slide-title">Учебно-методическое пособие по Python</h1>
 						</div>
 					</div>
@@ -434,7 +339,7 @@
 				</div>
 			</div>
 		</div>
-		<div style="height: 75vh; margin-bottom: -10px"></div>
+		<div class="hero-spacer"></div>
 		<div class="section-bg-one" id="info">
 			<div class="container py-5">
 				<div class="row py-5 bb align-items-center">
@@ -468,13 +373,13 @@
 						<p class="lead mb-5">Начни изучение в нашем комплексе</p>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="first1">
-						<a href="introduction/introduction.html"
+						<a href="Introduction/introduction.html"
 							><img
 								src="img/1d8e7b059e313fc47711d030472f1291.jpg"
 								class="img-fluid mb-4"
 						/></a>
 
-						<h5><a href="introduction/introduction.html">Введение </a></h5>
+						<h5><a href="Introduction/introduction.html">Введение </a></h5>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 mb-5 gg" id="first1">
 						<a href="chapter_1/лекции/main_section_1_lec_1.html"
@@ -534,24 +439,20 @@
 			<div class="container-fluid py-4">
 				<div class="row">
 					<div class="col-lg-4 col-md-12 text-center text-lg-left">
-						<style>
-							h6 {
-								margin-top: 40px;
-							}
-						</style>
 						<img
 							src="img/python-3-logo-svgrepo-com (2).svg"
-							class="mb-5 pb-0 pb-lg-5 img-fluid"
+							class="mb-4 mb-lg-5 img-fluid"
+							alt="Python"
 						/>
 					</div>
 					<div class="col-lg-8 col-md-12">
 						<div class="row text-white">
 							<div class="col-sm-6 col-12">
-								<h6 class="mb-4 text-white-50 small">Посмотреть</h6>
+								<h6 class="mb-3 mb-sm-4 text-white-50 small">Посмотреть</h6>
 								<a href="#info" class="btn btn-warning btn-lg"> Информацию </a>
 							</div>
 							<div class="col-sm-6 col-12">
-								<h6 class="text-white-50 small pt-5 pt-sm-0">
+								<h6 class="text-white-50 small mb-3 mb-sm-0">
 									Следите за нами
 								</h6>
 								<div class="social-icons">

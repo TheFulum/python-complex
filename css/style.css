@@ -1,3 +1,148 @@
 .fs-quick-nav {
 	display: none !important;
 }
+
+/* ── Site header (index) ── */
+.site-header {
+	padding: 0.5rem 0;
+}
+
+.site-header .header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 70px;
+}
+
+.site-header .navbar-brand {
+	margin: 0;
+	padding: 0;
+}
+
+.site-header .navbar-brand img {
+	height: 70px;
+	width: auto;
+}
+
+.site-header .menu-wrap {
+	position: relative;
+	top: auto;
+	left: auto;
+	z-index: 100;
+	flex-shrink: 0;
+}
+
+/* ── Hero / slideshow ── */
+.hero-spacer {
+	height: 75vh;
+	margin-bottom: -10px;
+}
+
+.slide-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-family: sans-serif;
+	text-align: center;
+	width: 90%;
+	max-width: 900px;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Footer (index + shared) ── */
+.footer-bg img {
+	max-width: 140px;
+	height: auto;
+}
+
+@media (max-width: 991.98px) {
+	.site-header .navbar-brand img {
+		height: 56px;
+	}
+
+	.hh .row.px-5 {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
+	.hh .col-12.pb-5.mb-5 {
+		padding-bottom: 1rem !important;
+		margin-bottom: 0 !important;
+	}
+
+	.hero-spacer {
+		height: 55vh;
+	}
+
+	.slide-content {
+		top: 58%;
+	}
+
+	h1.slide-title {
+		font-size: 28px !important;
+	}
+
+	p.slide-subtitle {
+		font-size: 16px !important;
+	}
+
+	.bb {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.footer-bg .btn-lg {
+		padding: 12px 24px;
+		font-size: 13px;
+	}
+
+	.footer-bg .social-icons {
+		padding-top: 16px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-bg .row.text-white > [class*='col-'] {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.site-header .header-inner {
+		min-height: 56px;
+	}
+
+	.site-header .navbar-brand img {
+		height: 48px;
+	}
+
+	.hero-spacer {
+		height: 45vh;
+	}
+
+	h1.slide-title {
+		font-size: 22px !important;
+		margin-bottom: 10px !important;
+	}
+
+	p.slide-subtitle {
+		font-size: 14px !important;
+	}
+
+	.gg img {
+		height: 160px;
+	}
+
+	.lead {
+		line-height: 1.6;
+		font-size: 1rem;
+	}
+
+	.footer-bg img {
+		max-width: 100px;
+	}
+}
