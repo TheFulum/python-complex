@@ -471,6 +471,33 @@
 			}
 		</script>
 
+		<script>
+			(function () {
+				var toggler = document.getElementById('nav-toggler');
+				if (!toggler) return;
+
+				var scrollY = 0;
+
+				function setMenuOpen(isOpen) {
+					if (isOpen) {
+						scrollY = window.scrollY;
+						document.documentElement.classList.add('menu-open');
+						document.body.classList.add('menu-open');
+						document.body.style.top = '-' + scrollY + 'px';
+					} else {
+						document.documentElement.classList.remove('menu-open');
+						document.body.classList.remove('menu-open');
+						document.body.style.top = '';
+						window.scrollTo(0, scrollY);
+					}
+				}
+
+				toggler.addEventListener('change', function () {
+					setMenuOpen(toggler.checked);
+				});
+			})();
+		</script>
+
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

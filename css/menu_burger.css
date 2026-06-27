@@ -119,6 +119,25 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 1090;
+}
+
+.menu-wrap .toggler:checked + .hamburger {
+	z-index: 1110;
+}
+
+/* Lock page scroll while menu is open */
+html:has(#nav-toggler:checked),
+html.menu-open {
+	overflow: hidden;
+}
+
+body.menu-open {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
 }
 
 .menu-wrap .menu > div {
