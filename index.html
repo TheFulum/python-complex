@@ -217,12 +217,6 @@
     opacity: 0.8;
 }
 			@media (max-width: 1200px) {
-				h1.slide-title {
-					font-size: 38px !important;
-				}
-				p.slide-subtitle {
-					font-size: 20px !important;
-				}
 				.section-bg-one {
 					background-position: right 0 top -20px !important;
 				}
@@ -276,7 +270,16 @@
 									</div>
 								</div>
 								<a class="navbar-brand" href="index.html">
-									<img src="img/python-3-logo-svgrepo-com (2).svg" alt="Python" />
+									<picture>
+										<source
+											media="(max-width: 991.98px)"
+											srcset="img/python-svgrepo-com.svg"
+										/>
+										<img
+											src="img/python-3-logo-svgrepo-com (2).svg"
+											alt="Python"
+										/>
+									</picture>
 								</a>
 							</div>
 						</nav>
