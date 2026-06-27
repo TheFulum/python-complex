@@ -67,9 +67,45 @@
 }
 
 /* ── Footer (index + shared) ── */
-.footer-bg img {
-	max-width: 140px;
+.footer-bg {
+	background-color: #363535;
+}
+
+.footer-bg .container-fluid {
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+}
+
+.footer-bg img,
+.footer-bg .footer-logo {
+	max-width: 110px;
 	height: auto;
+	margin-bottom: 0;
+}
+
+.footer-bg h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+.footer-bg .social-icons {
+	padding-top: 0;
+}
+
+.footer-bg .social-icons a {
+	padding: 12px 13px;
+	margin-right: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-bg .btn-lg {
+	padding: 10px 22px;
+	font-size: 13px;
 }
 
 @media (max-width: 991.98px) {
@@ -109,20 +145,41 @@
 		margin-bottom: 10px;
 	}
 
+	.footer-bg .container-fluid {
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.footer-bg > .container-fluid > .row > [class*='col-']:first-child img,
+	.footer-bg > .container-fluid > .row > [class*='col-']:first-child .footer-logo {
+		margin-bottom: 0.25rem !important;
+		padding-bottom: 0 !important;
+	}
+
+	.footer-bg .row.text-white {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.25rem;
+	}
+
+	.footer-bg .row.text-white > [class*='col-'] {
+		margin-bottom: 0 !important;
+		padding-top: 0 !important;
+		text-align: center;
+		width: 100%;
+		max-width: 280px;
+	}
+
 	.footer-bg .btn-lg {
 		padding: 12px 24px;
 		font-size: 13px;
 	}
 
 	.footer-bg .social-icons {
-		padding-top: 16px;
+		padding-top: 0 !important;
 		display: flex;
 		justify-content: center;
-	}
-
-	.footer-bg .row.text-white > [class*='col-'] {
-		text-align: center;
-		margin-bottom: 1rem;
 	}
 }
 
@@ -168,7 +225,21 @@
 		padding-bottom: 1rem !important;
 	}
 
-	.footer-bg img {
-		max-width: 100px;
+	.footer-bg .container-fluid {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.footer-bg img,
+	.footer-bg .footer-logo {
+		max-width: 88px;
+	}
+
+	.footer-bg .row.text-white {
+		gap: 1rem;
+	}
+
+	.footer-bg .social-icons a {
+		padding: 10px 11px;
 	}
 }
