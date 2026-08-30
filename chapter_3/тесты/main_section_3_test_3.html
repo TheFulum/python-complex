@@ -11,7 +11,7 @@
 			crossorigin="anonymous"
 		/>
 
-		<script src="script_3.js"></script>
+		<script src="script_2.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
@@ -89,7 +89,7 @@
 								href="../тесты/main_section_3_test_1.html"
 								>Тесты</a
 							>
-								<a
+									<a
 								class="flex-sm-fill text-sm-center nav-link"
 								style="color: black"
 								href="../презентации/main_pres_1.html"
@@ -130,13 +130,12 @@
 						</div>
 
 						<div class="card-body">
-							<h5 class="card-title" style="text-align: center;">Тест №3 &nbsp;&nbsp Наследование. Полиморфизм. Абстракция
-
+							<h5 class="card-title" style="text-align: center;">Тест №3 &nbsp;&nbsp Перегрузка операторов
 </h5><br>
 							<p class="card-text centerText">
 								<strong> 1. Ответьте на вопрос </strong>
 							</p>
-							<p>Механизм, позволяющий классу наследовать атрибуты и методы другого класса?</p>
+							<p>Какой метод в Python используется для перегрузки оператора сложения?</p>
 									<div class="input-group flex-nowrap">
 										<span class="input-group-text" id="addon-wrapping"></span>
 										<input
@@ -153,22 +152,25 @@
 								<div class="card-body">
 									<p class="card-text centerText">
 										<strong>
-											2.Как называется класс, от которого происходит наследование?
+											2. Какие из следующих специальных методов в Python используются для работы с контекстным менеджером?
 										</strong>
 									</p>
 									<p>
-										<input id="input1" type="radio" name="q1" value="a" />&nbsp;&nbsp;а) Родительский класс.
-									</p>
-									<p>
-										<input id="input2" type="radio" name="q1" value="b" />&nbsp;&nbsp;б) Дочерний класс.
-	
+										<input id="input1" type="checkbox" name="q1" value="a" />&nbsp;&nbsp;
+										а) __init__()		
+			
 
 									</p>
 									<p>
-										<input id="input3" type="radio" name="q1" value="c"/>&nbsp;&nbsp;в)Основной класс. 
+										<input id="input2" type="checkbox" name="q1" value="b"/>&nbsp;&nbsp;б) __enter__()
 									</p>
 									<p>
-										<input id="input4" type="radio" name="q1" value="d"/>&nbsp;&nbsp;	г) Подкласс.
+										<input id="input3" type="checkbox" name="q1" value="c"/>&nbsp;&nbsp;в) __exit__()
+									</p>
+									<p>
+										<input id="input4" type="checkbox" name="q1"
+										value="d"/>&nbsp;&nbsp;
+									г) __del__()
 									</p>
 									
 								</div>
@@ -176,22 +178,22 @@
 								<div class="card-body">
 									<p class="card-text centerText">
 										<strong>
-											3.Какой метод в Python используется для вызова конструктора родительского класса из дочернего класса?
+											3.Какой специальный метод в Python позволяет определить строковое представление объекта?
 										</strong>
 									</p>
 									<p>
-										<input id="input1" type="radio" name="q2" value="a" />&nbsp;&nbsp;а) __init__()
+										<input id="input1" type="radio" name="q2" value="a" />&nbsp;&nbsp;а) __add__()	
 									</p>
 									<p>
-										<input id="input2" type="radio" name="q2" value="b" />&nbsp;&nbsp;б) super()
+										<input id="input2" type="radio" name="q2" value="b" />&nbsp;&nbsp;б) __str__()
 	
 
 									</p>
 									<p>
-										<input id="input3" type="radio" name="q2" value="c"/>&nbsp;&nbsp;в) parent()
+										<input id="input3" type="radio" name="q2" value="c"/>&nbsp;&nbsp;в) __repr__()
 									</p>
 									<p>
-										<input id="input4" type="radio" name="q2" value="d"/>&nbsp;&nbsp;	г) init_parent()
+										<input id="input4" type="radio" name="q2" value="d"/>&nbsp;&nbsp;	г) __init__()
 									</p>
 									
 								</div>
@@ -199,32 +201,32 @@
 								<div class="card-body">
 									<p class="card-text centerText">
 										<strong>
-											4. Какие из следующих элементов используются для наследования в Python?
+											4. Какие специальные методы в Python позволяют перегрузить операторы сравнения?
 										</strong>
 									</p>
 									<p>
 										<input id="input1" type="checkbox" name="q3" value="a" />&nbsp;&nbsp;
-										а) 	extends
+										а) __le__()			
 			
 
 									</p>
 									<p>
-										<input id="input2" type="checkbox" name="q3" value="b"/>&nbsp;&nbsp;б) inherits
+										<input id="input2" type="checkbox" name="q3" value="b"/>&nbsp;&nbsp;б) __gt__()
 									</p>
 									<p>
-										<input id="input3" type="checkbox" name="q3" value="c"/>&nbsp;&nbsp;в) :
+										<input id="input3" type="checkbox" name="q3" value="c"/>&nbsp;&nbsp;в) __ge__()
 									</p>
 									<p>
 										<input id="input4" type="checkbox" name="q3"
 										value="d"/>&nbsp;&nbsp;
-									г) class
+									г)__eq__()
 									</p>
 									
 								</div>
 									<div class="card-body">
 									<p class="card-text centerText">
 										<strong>
-											5. Может ли дочерний класс переопределить метод родительского класса?
+											5. Можно ли в Python перегрузить оператор == для сравнения двух объектов пользовательского класса?
 										</strong>
 									</p>
 									<div class="input-group mb-3">
@@ -243,7 +245,7 @@
 									<p class="card-text centerText">
 										<strong>6. Добавьте недостающее слово:</strong>
 									</p>
-									<p> Какой тип наследования в Python позволяет классу наследовать атрибуты и методы нескольких родительских классов?</p>
+									<p>Какой метод в Python используется для перегрузки оператора сложения справа?</p>
 									<div class="input-group flex-nowrap">
 										<span class="input-group-text" id="addon-wrapping"></span>
 										<input
@@ -257,49 +259,60 @@
 									<div class="card-body">
 									<p class="card-text centerText">
 										<strong>
-											7.Что происходит при вызове метода super() в дочернем классе в Python?
+											7.Какие из перечисленных методов являются специальными методами для работы с контейнерами в Python?
 										</strong>
 									</p>
 									<p>
 										<input id="input1" type="checkbox" name="q7" value="a" />&nbsp;&nbsp;
-										а)Метод super() создает экземпляр родительского класса. 
+										а) __len__()
 									</p>
 									<p>
-										<input id="input2" type="checkbox" name="q7" value="b"/>&nbsp;&nbsp;б)Метод super() вызывает конструктор родительского класса. 
+										<input id="input2" type="checkbox" name="q7" value="b"/>&nbsp;&nbsp;б) __contains__()
 									</p>
 									<p>
-										<input id="input3" type="checkbox" name="q7" value="c"/>&nbsp;&nbsp;в)Метод super() вызывает все методы родительского класса. 
+										<input id="input3" type="checkbox" name="q7" value="c"/>&nbsp;&nbsp;в)__iter__() 
 									</p>
 									<p>
 										<input id="input4" type="checkbox" name="q7"
 										value="d"/>&nbsp;&nbsp;
-										г)Метод super() позволяет обращаться к атрибутам и методам родительского класса из дочернего класса. 
+										г)  __get__()
 									</p>
 									
 								</div>
 								<div class="card-body">
     <p class="card-text centerText">
         <strong>
-            8.Какая функция в Python позволяет проверить, является ли объект экземпляром определенного класса или его подкласса?
+            8. Какой код вы используете, чтобы получить количество страниц в книге my_book?
         </strong>
+				<p>
+					class Book: <br>
+    &nbsp;&nbsp; def __init__(self, title, author, pages): <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;    self.title = title <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;    self.author = author <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;    self.pages = pages <br>
+
+   &nbsp;&nbsp; def __len__(self): <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;    return self.pages
+
+				</p>
     </p>
     <p>
-        <input id="input1" type="radio" name="q8" value="a" />&nbsp;&nbsp;а) instanceof()
+        <input id="input1" type="radio" name="q8" value="a" />&nbsp;&nbsp;а) len(my_book)
     </p>
     <p>
-        <input id="input2" type="radio" name="q8" value="b" />&nbsp;&nbsp;б) isinstance()
+        <input id="input2" type="radio" name="q8" value="b" />&nbsp;&nbsp;б) my_book.len()
     </p>
     <p>
-        <input id="input3" type="radio" name="q8" value="c"/>&nbsp;&nbsp;в) check_instance()	
+        <input id="input3" type="radio" name="q8" value="c"/>&nbsp;&nbsp;в)my_book.__len__() 	
     </p>
     <p>
-        <input id="input4" type="radio" name="q8" value="d"/>&nbsp;&nbsp;г) check_class()
+        <input id="input4" type="radio" name="q8" value="d"/>&nbsp;&nbsp;г) my_book.pages()
     </p>
 </div>
 <div class="card-body">
     <p class="card-text centerText">
         <strong>
-            9. В Python можно создавать собственные классы. Верно ли это утверждение?
+            9. Будет ли вызван специальный метод __eq__ при сравнении двух объектов с использованием оператора ==?
         </strong>
     </p>
     <div class="input-group mb-3">
@@ -313,20 +326,20 @@
 <div class="card-body">
     <p class="card-text centerText">
         <strong>
-            10. В чем состоит преимущество наследования?
+            10. Какие из перечисленных методов в Python позволяют определить порядок сравнения объектов?
         </strong>
     </p>
     <p>
-        <input id="input1" type="radio" name="q10" value="a" />&nbsp;&nbsp;а) Уменьшает сложность программы. 
+        <input id="input1" type="checkbox" name="q10" value="a" />&nbsp;&nbsp;а)__cmp__() 
     </p>
     <p>
-        <input id="input2" type="radio" name="q10" value="b" />&nbsp;&nbsp;б) Упрощает повторное использование кода. 
+        <input id="input2" type="checkbox" name="q10" value="b" />&nbsp;&nbsp;б) __eq__() 
     </p>
     <p>
-        <input id="input3" type="radio" name="q10" value="c"/>&nbsp;&nbsp;в)Позволяет создавать классы без методов.
+        <input id="input3" type="checkbox" name="q10" value="c"/>&nbsp;&nbsp;в) __lt__()
     </p>
     <p>
-        <input id="input4" type="radio" name="q10" value="d"/>&nbsp;&nbsp;г)Делает код более надежным.
+        <input id="input4" type="checkbox" name="q10" value="d"/>&nbsp;&nbsp;г)  __ne__()
     </p>
 </div>
 
@@ -425,7 +438,7 @@
 							>
 						</li>
 
-<li
+						<li
 							class="list-group-item d-flex justify-content-between align-items-start"
 						>
 							<a
@@ -437,12 +450,13 @@
 								>Обязательная контрольная работа №2
 							</a>
 						</li>
+
 						<li
 							class="list-group-item d-flex justify-content-between align-items-start"
 						>
 							<a
 								class="btn btn-outline-dark"
-								href="../../index.html"
+								href="../index.html"
 								role="button"
 								title="Основные сведения о локальных вычислительных сетях"
 								>На главную</a
